@@ -10,7 +10,12 @@ export default function Home() {
             </header>
             <main>
                 <div id="top-left-div">
-                    <h2>About me</h2>
+                </div>
+                <div id="top-right-div">
+                </div>
+                <div id="bottom-left-div">
+                </div>
+                <div id="bottom-right-div">
                 </div>
             </main>
             <footer>
