@@ -2,18 +2,21 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <body>
+        <>
             <header>
-                <h1>Kyle Trahan</h1>
-                {/* nav bar */}
+                <div id="name-container">
+                    <h1 id="name-header">Kyle Trahan</h1>
+                </div>
             </header>
             <main>
-                {/* about me */}
+                <div id="top-left-div">
+                    <h2>About me</h2>
+                </div>
             </main>
             <footer>
                 {/* contact information */}
             </footer>
-        </body>
+        </>
     )
 }
 //contact information
