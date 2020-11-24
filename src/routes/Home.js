@@ -9,20 +9,22 @@ export default function Home() {
                 </div>
             </header>
             <main>
-                <div id="top-left-div">
+                <div class="post-container" id="top-left-div">
+                    <h2 class="post" id="who-i-am">Who I Am</h2>
                 </div>
-                <div id="top-right-div">
+                <div class="post-container" id="top-right-div">
+                    <h2 class="post" id="projects">Projects</h2>
                 </div>
-                <div id="bottom-left-div">
+                <div class="post-container" id="bottom-left-div">
+                    <h2 class="post" id="hobbies">Hobbies</h2>
                 </div>
-                <div id="bottom-right-div">
+                <div class="post-container" id="bottom-right-div">
+                    <h2 class="post" id="contact-information">Contact Information</h2>
                 </div>
             </main>
             <footer>
-                {/* contact information */}
+                
             </footer>
         </>
     )
 }
-//contact information
-//header
