@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Home() {
+
+    const [ isActiveQuadrant, setActiveQuadrant ] = useState("")
+
     return (
         <>
             <header>
@@ -9,17 +12,58 @@ export default function Home() {
                 </div>
             </header>
             <main>
-                <div class="post-container" id="top-left-div">
-                    <h2 class="post" id="who-i-am">Who I Am</h2>
+                <div 
+                    className={isActiveQuadrant === "who-i-am" ? "quadrant expand-quadrant" : "quadrant"} 
+                    id="top-left-div"
+                >
+                    <div 
+                        className={isActiveQuadrant === "who-i-am" ? "post-container expand-post-container" : "post-container"} 
+                        id="who-i-am"
+                        onClick={ () => setActiveQuadrant("who-i-am")}
+                        
+                    >
+                        <h2 className="post-title" >Who I Am</h2>
+                        <p className="post-information">scribble scrabble</p>
+                    </div>
                 </div>
-                <div class="post-container" id="top-right-div">
-                    <h2 class="post" id="projects">Projects</h2>
+                <div 
+                    className={isActiveQuadrant === "projects" ? "quadrant expand-quadrant" : "quadrant"} 
+                    id="top-right-div"
+                >
+                    <div 
+                        className={isActiveQuadrant === "projects" ? "post-container expand-post-container" : "post-container"} 
+                        id="projects"
+                        onClick={ () => setActiveQuadrant("projects")}
+                    >
+                        <h2 className="post-title" >Projects</h2>
+                        <p className="post-information"></p>
+                    </div>
                 </div>
-                <div class="post-container" id="bottom-left-div">
-                    <h2 class="post" id="hobbies">Hobbies</h2>
+                <div 
+                    className={isActiveQuadrant === "hobbies" ? "quadrant expand-quadrant" : "quadrant"} 
+                    id="bottom-left-div"
+                >
+                    <div 
+                        className={isActiveQuadrant === "hobbies" ? "post-container expand-post-container" : "post-container"} 
+                        id="hobbies"
+                        onClick={ () => setActiveQuadrant("hobbies")}
+                    >
+                        <h2 className="post-title">Hobbies</h2>
+                        <p className="post-information"></p>
+                    </div>
                 </div>
-                <div class="post-container" id="bottom-right-div">
-                    <h2 class="post" id="contact-information">Contact Information</h2>
+                <div 
+                        className={isActiveQuadrant === "contact-information" ? "quadrant expand-quadrant" : "quadrant"} 
+                        id="bottom-right-div"
+                >
+                    <div 
+                        className={isActiveQuadrant === "contact-information" ? "post-container expand-post-container" : "post-container"} 
+                        id="contact-information"
+                        onClick={ () => setActiveQuadrant("contact-information")}
+                    >
+                        <h2 className="post-title">Contact</h2>
+                        <p className="post-information"></p>
+                    </div>
                 </div>
             </main>
             <footer>

@@ -52,11 +52,11 @@ header {
 
 main {
   display: flex;
-  height: 70%;
+  height: 80%;
   flex-flow: row wrap;
 }
  
-.post-container {
+.quadrant {
   display: flex;
   height: 50%;
   width: 50%;
@@ -64,7 +64,14 @@ main {
   align-items: center;
 }
 
-.post {
+.expand-quadrant {
+  height: 80%;
+  width: 80%;
+  z-index: 2;  
+  position: absolute
+}
+
+.post-container {
   background-image: url('./photos/parchment.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,14 +81,19 @@ main {
   width: 200px;
   justify-content: center;
   text-align: center;
+  z-index: 1;
+}
+
+.expand-post-container {
+   height: 100%;
+   width: 100%;
+   transform: rotate(10deg)
+}
+
+.post-title {
   text-decoration: underline;
   padding: 10px;
   font-family: 'MedievalSharp', cursive;
-
-}
-
-.post:hover {
-  transform: scale(1.1)
 }
 
 #who-i-am {
@@ -99,20 +111,3 @@ main {
 #contact-information {
   transform: rotate(10deg);
 }
-
-/* #contact-container {
-  background-image: url('./photos/parchment.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  width: 75%;
-  height: 50%;
-}
-
-#contact-information {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-} */
