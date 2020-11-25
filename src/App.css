@@ -54,6 +54,7 @@ main {
   display: flex;
   height: 80%;
   flex-flow: row wrap;
+  justify-content: center;
 }
  
 .quadrant {
@@ -66,7 +67,7 @@ main {
 
 .expand-quadrant {
   height: 80%;
-  width: 80%;
+  width: 90%;
   z-index: 2;  
   position: absolute
 }
@@ -82,12 +83,12 @@ main {
   justify-content: center;
   text-align: center;
   z-index: 1;
+  transition: width 2s, height 2s;
 }
 
 .expand-post-container {
    height: 100%;
    width: 100%;
-   transform: rotate(10deg)
 }
 
 .post-title {
@@ -96,18 +97,10 @@ main {
   font-family: 'MedievalSharp', cursive;
 }
 
-#who-i-am {
+.rotate-left {
   transform: rotate(-10deg)
 }
-
-#projects {
-  transform: rotate(10deg);
-}
-
-#hobbies {
-  transform: rotate(-10deg)
-}
-
-#contact-information {
-  transform: rotate(10deg);
+ 
+.rotate-right {
+  transform: rotate(10deg)
 }
