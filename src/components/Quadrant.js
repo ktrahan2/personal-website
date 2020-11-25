@@ -7,22 +7,22 @@ export default function Quadrant() {
     //create separate file for quadrantArray, maybe better name as well
     const quadrantArray = [
         {
-            title: "who-i-am",
+            title: "Who I Am",
             description: "scribble scrabble",
             rotationDirection: "left"
         }, 
         {
-            title: "projects",
+            title: "Projects",
             description: "scribble scrabble",
             rotationDirection: "right"
         }, 
         {
-            title: "hobbies",
+            title: "Hobbies",
             description: "scribble scrabble",
             rotationDirection: "left"
         }, 
         {
-            title: "contact-information",
+            title: "Contact",
             description: "scribble scrabble",
             rotationDirection: "right"
         }, 
