@@ -28,28 +28,47 @@ export default function Quadrant() {
         }, 
     ]
 
+    const createActiveQuadrant = (element) => {
+        console.log('element', element)
+        // setActiveQuadrant(element.title)
+        console.log("active", isActiveQuadrant)
+        return (
+            <div 
+                className="expand-quadrant"
+                // id={element.title}
+            >
+                <div 
+                    className="post-container expand-post-container"
+                    // id={element.title}
+                    onClick={ () => setActiveQuadrant("")}
+                >
+                    {/* <h2 className="post-title" >{element.title}</h2> */}
+                    {/* <p className="post-information">{element.description}</p> */}
+                </div>
+            </div>
+        )
+    }
+
+    //create new div instead of expanding the selected one. 
     const createQuadrants = () => {
         return quadrantArray.map((element, index) => {
             return (
                 <div 
-                    className={isActiveQuadrant === element.title ? 
-                        "quadrant expand-quadrant" 
-                        : "quadrant"
-                    } 
+                    className="quadrant"
                     id={index}
                 >
                     <div 
-                        className={isActiveQuadrant === element.title ? 
-                            "post-container expand-post-container" 
-                            : `post-container rotate-${element.rotationDirection}`
-                        } 
+                        className={`post-container rotate-${element.rotationDirection}`} 
                         id={element.title}
-                        onClick={ 
-                            isActiveQuadrant === element.title ? 
-                                () => setActiveQuadrant("") 
-                            :
-                                () => setActiveQuadrant(element.title)
-                        }
+                        onClick={ () => {
+                            setActiveQuadrant(element.title)
+                            createActiveQuadrant(element)
+                        }}
+                        //     isActiveQuadrant === element.title ? 
+                        //         () => setActiveQuadrant("") 
+                        //     :
+                        //         () => setActiveQuadrant(element.title)
+                        // }
                     >
                         <h2 className="post-title" >{element.title}</h2>
                         <p className="post-information">{element.description}</p>
@@ -61,7 +80,8 @@ export default function Quadrant() {
 
     return (
         <>
-            { createQuadrants() } 
+            { createQuadrants() }
+            { isActiveQuadrant != "" ? createActiveQuadrant() : null} 
         </>
     )
 }
