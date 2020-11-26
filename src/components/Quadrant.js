@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ActiveQuadrant from './ActiveQuadrant'
 
 export default function Quadrant() {
 
@@ -27,29 +28,7 @@ export default function Quadrant() {
             rotationDirection: "right"
         }, 
     ]
-
-    const createActiveQuadrant = (element) => {
-        console.log('element', element)
-        // setActiveQuadrant(element.title)
-        console.log("active", isActiveQuadrant)
-        return (
-            <div 
-                className="expand-quadrant"
-                // id={element.title}
-            >
-                <div 
-                    className="post-container expand-post-container"
-                    // id={element.title}
-                    onClick={ () => setActiveQuadrant("")}
-                >
-                    {/* <h2 className="post-title" >{element.title}</h2> */}
-                    {/* <p className="post-information">{element.description}</p> */}
-                </div>
-            </div>
-        )
-    }
-
-    //create new div instead of expanding the selected one. 
+    //do something to show you can click them
     const createQuadrants = () => {
         return quadrantArray.map((element, index) => {
             return (
@@ -60,15 +39,7 @@ export default function Quadrant() {
                     <div 
                         className={`post-container rotate-${element.rotationDirection}`} 
                         id={element.title}
-                        onClick={ () => {
-                            setActiveQuadrant(element.title)
-                            createActiveQuadrant(element)
-                        }}
-                        //     isActiveQuadrant === element.title ? 
-                        //         () => setActiveQuadrant("") 
-                        //     :
-                        //         () => setActiveQuadrant(element.title)
-                        // }
+                        onClick={ () => setActiveQuadrant(element) }
                     >
                         <h2 className="post-title" >{element.title}</h2>
                         <p className="post-information">{element.description}</p>
@@ -81,7 +52,11 @@ export default function Quadrant() {
     return (
         <>
             { createQuadrants() }
-            { isActiveQuadrant != "" ? createActiveQuadrant() : null} 
+            { isActiveQuadrant ? 
+                <ActiveQuadrant 
+                    isActiveQuadrant={isActiveQuadrant}
+                    setActiveQuadrant={setActiveQuadrant}
+                /> : null } 
         </>
     )
 }

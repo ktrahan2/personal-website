@@ -69,7 +69,8 @@ main {
   height: 80%;
   width: 90%;
   z-index: 2;  
-  position: absolute
+  position: absolute;
+  padding: 15px;
 }
 
 .post-container {
