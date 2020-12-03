@@ -65,7 +65,7 @@ main {
   align-items: center;
 }
 
-.expand-quadrant {
+.expanded-quadrant {
   height: 80%;
   width: 90%;
   z-index: 2;  
@@ -87,7 +87,7 @@ main {
   transition: width 2s, height 2s;
 }
 
-.expand-post-container {
+.expanded-post-container {
    height: 100%;
    width: 100%;
 }
@@ -96,6 +96,18 @@ main {
   text-decoration: underline;
   padding: 10px;
   font-family: 'MedievalSharp', cursive;
+  font-size: 36px;
+}
+
+.scribble-post-information {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 6px;
+}
+
+.post-information {
+  font-size: 28px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .rotate-left {
