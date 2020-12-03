@@ -13,11 +13,13 @@ export default function Quadrant() {
             rotationDirection: "left"
         }, 
         {
+            //create scroller for different projects worked on
             title: "Projects",
             content: ["Coming Soon"],
             rotationDirection: "right"
         }, 
         {
+            //create scroller for photos from travel etc 
             title: "Hobbies",
             content: ["Coming Soon"],
             rotationDirection: "left"
