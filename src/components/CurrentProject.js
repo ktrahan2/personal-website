@@ -7,8 +7,10 @@ export default function CurrentProject({ isActiveProject }) {
         <div className="project-container">
             <h2>{projects[isActiveProject].title}</h2>
             <p key={projects[isActiveProject].description}>{projects[isActiveProject].description}</p>
-            <a href={projects[isActiveProject].demo}>Demo</a>
-            <a href={projects[isActiveProject].github}>Github Repo</a>
+            <div className="links">
+                <a href={projects[isActiveProject].demo}>Demo</a>
+                <a href={projects[isActiveProject].github}>Github Repo</a>
+            </div>
         </div>
     )
 }
