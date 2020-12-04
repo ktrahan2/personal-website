@@ -31,9 +31,9 @@ export default function Quadrant() {
         }, 
     ]
     //do something to show you can click them
+    //fix so text wont overflow
     const createQuadrants = () => {
         return quadrantArray.map((element, index) => {
-            console.log(element.content)
             return (
                 <div 
                     className="quadrant"
