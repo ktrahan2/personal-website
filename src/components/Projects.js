@@ -1,29 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import postSectionArray from "../config/PostSectionArrayConfig"
 import CurrentProject from './CurrentProject'
-import { projects } from '../config/ProjectConfig'
+import LeftArrow from "./LeftArrow"
+import RightArrow from './RightArrow'
 
-export default function Projects({ isActiveProject, setActiveProject }) {
+export default function Projects() {
+
+    const [ isActiveProject, setActiveProject ] = useState(0)
 
     return (
         <>
             <h2 className="post-title" >{ postSectionArray()[1].title }</h2>
             <div className="carousel-container"> 
-                <div 
-                    id="left-arrow" 
-                    className="arrow"
-                    onClick={ () => setActiveProject(isActiveProject - 1)}
-                >
-                { isActiveProject > 0 ? "left arrow" : "" }
-                </div>
-                    <CurrentProject isActiveProject={isActiveProject}/>
-                <div 
-                    id="right-arrow" 
-                    className="arrow"
-                    onClick={ () => setActiveProject(isActiveProject + 1)}
-                >
-                { isActiveProject < projects.length - 1 ? "right arrow" : "" }
-                </div>
+                <LeftArrow 
+                    setActiveProject={setActiveProject}
+                    isActiveProject={isActiveProject}
+                />
+                <CurrentProject isActiveProject={isActiveProject}/>
+                <RightArrow
+                    setActiveProject={setActiveProject}
+                    isActiveProject={isActiveProject}
+                />
             </div>
         </>
     )

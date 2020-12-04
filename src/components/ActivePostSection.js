@@ -12,7 +12,7 @@ export default function ActiveQuadrant({ isActiveQuadrant, setActiveQuadrant }) 
             <div 
                 className="post-container expanded-post-container"
                 id={ isActiveQuadrant.title }
-                onClick={ () => setActiveQuadrant("")}
+                onClick={ (event) => event.target.className !== "arrow" ? setActiveQuadrant("") : null }
             >
                 {isActiveQuadrant.renderFunction}
             </div>

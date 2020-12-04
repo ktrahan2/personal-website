@@ -2,15 +2,9 @@ import AboutMe from "../components/AboutMe"
 import ContactInformation from "../components/ContactInformation"
 import Projects from "../components/Projects"
 import Hobbies from "../components/Hobbies"
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 export default function PostSectionArrayConfig() {
-
-    const [ isActiveProject, setActiveProject ] = useState("")
-    
-    useEffect( () => {
-        setActiveProject(0)
-    }, [])
 
     const postSectionArray =   
     [
@@ -26,10 +20,7 @@ export default function PostSectionArrayConfig() {
             content: [ "Coming Soon" ],
             rotationDirection: "right",
             renderFunction: 
-                <Projects        
-                    isActiveProject={isActiveProject}
-                    setActiveProject={setActiveProject}
-                />
+                <Projects/>
         }, 
         {
             //create scroller for photos from travel etc 
