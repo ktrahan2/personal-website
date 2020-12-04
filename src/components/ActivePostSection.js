@@ -3,14 +3,15 @@ import React from 'react'
 export default function ActiveQuadrant({ isActiveQuadrant, setActiveQuadrant }) {
     
     //do something to show you can click the element
+    //add ability to scroll to overflow
     return (
         <div 
-            className="expanded-quadrant"
+            className="expanded-post-section"
             id={isActiveQuadrant.title}
         >
             <div 
                 className="post-container expanded-post-container"
-                id={isActiveQuadrant.title}
+                id={ isActiveQuadrant.title }
                 onClick={ () => setActiveQuadrant("")}
             >
                 {isActiveQuadrant.renderFunction}

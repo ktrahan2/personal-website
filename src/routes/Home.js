@@ -1,5 +1,5 @@
 import React from 'react'
-import Quadrant from "../components/Quadrant"
+import PostSection from "../components/PostSection"
 
 export default function Home() {
 
@@ -11,7 +11,7 @@ export default function Home() {
                 </div>
             </header>
             <main>
-                <Quadrant />
+                <PostSection />
             </main>
         </>
     )

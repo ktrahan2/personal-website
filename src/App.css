@@ -57,7 +57,7 @@ main {
   justify-content: center;
 }
  
-.quadrant {
+.post-section {
   display: flex;
   height: 50%;
   width: 50%;
@@ -65,7 +65,7 @@ main {
   align-items: center;
 }
 
-.expanded-quadrant {
+.expanded-post-section {
   height: 80%;
   width: 90%;
   z-index: 2;  
@@ -109,7 +109,7 @@ main {
   font-size: 28px;
   margin: 20px;
   padding: 20px;
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'MedievalSharp';
 }
 
 .rotate-left {
@@ -118,4 +118,20 @@ main {
  
 .rotate-right {
   transform: rotate(10deg)
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.arrow {
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  width: 80%;
 }
