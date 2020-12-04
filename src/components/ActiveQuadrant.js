@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function ActiveQuadrant({ isActiveQuadrant, setActiveQuadrant }) {
-
+    
     //do something to show you can click the element
     return (
         <div 
@@ -13,10 +13,7 @@ export default function ActiveQuadrant({ isActiveQuadrant, setActiveQuadrant }) 
                 id={isActiveQuadrant.title}
                 onClick={ () => setActiveQuadrant("")}
             >
-                <h2 className="post-title" >{isActiveQuadrant.title}</h2>
-                {isActiveQuadrant.content.map((paragraph, index) => {
-                    return <p className="post-information" key={index}>{paragraph}</p>
-                })}
+                {isActiveQuadrant.renderFunction}
             </div>
         </div>
     )
