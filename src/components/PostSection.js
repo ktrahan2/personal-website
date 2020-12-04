@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ActiveQuadrant from './ActivePostSection'
-import { postSectionArray } from '../config/PostSectionArrayConfig'
+import postSectionArray from '../config/PostSectionArrayConfig'
 
 export default function PostSection() {
 
@@ -8,7 +8,7 @@ export default function PostSection() {
 
     //do something to show you can click them
     const createQuadrants = () => {
-        return postSectionArray.map(( element, index ) => {
+        return postSectionArray().map(( element, index ) => {
             return (
                 <div 
                     className="post-section"
@@ -37,6 +37,7 @@ export default function PostSection() {
                 <ActiveQuadrant 
                     isActiveQuadrant={isActiveQuadrant}
                     setActiveQuadrant={setActiveQuadrant}
+                    // isActiveProject={isActiveProject}
                 /> : null } 
         </>
     )

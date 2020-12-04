@@ -1,5 +1,5 @@
 import React from 'react'
-import { postSectionArray } from "../config/PostSectionArrayConfig"
+import postSectionArray from "../config/PostSectionArrayConfig"
 
 export default function ContactInformation() {
     return (
