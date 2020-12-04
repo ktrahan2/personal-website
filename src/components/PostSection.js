@@ -37,7 +37,6 @@ export default function PostSection() {
                 <ActiveQuadrant 
                     isActiveQuadrant={isActiveQuadrant}
                     setActiveQuadrant={setActiveQuadrant}
-                    // isActiveProject={isActiveProject}
                 /> : null } 
         </>
     )

@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function ActiveQuadrant({ isActiveQuadrant, setActiveQuadrant }) {
     
-    //do something to show you can click the element
     //add ability to scroll to overflow
     return (
         <div 
@@ -12,8 +11,7 @@ export default function ActiveQuadrant({ isActiveQuadrant, setActiveQuadrant }) 
             <div 
                 className="post-container expanded-post-container"
                 id={ isActiveQuadrant.title }
-                //change this onclick to an x or something similiar 
-                // onClick={ (event) => event.target.className !== "arrow" ? setActiveQuadrant("") : null }
+                onClick={ (event) => event.target.id === "exit-icon" ? setActiveQuadrant("") : null }
             >
                 {isActiveQuadrant.renderFunction}
             </div>
