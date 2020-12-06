@@ -20,8 +20,6 @@ export default function Projects() {
                 <FontAwesomeIcon 
                     id="exit-icon" 
                     icon={ faTimesCircle }
-                    //onclick should setActiveQuadrant to ""
-                    // onClick={ () => setActiveQuadrant("")}
                 />
             </div>
             <div className="carousel-container"> 

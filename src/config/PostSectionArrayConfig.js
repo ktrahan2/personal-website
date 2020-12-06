@@ -17,7 +17,7 @@ export default function PostSectionArrayConfig() {
         {
             //create scroller for different projects worked on
             title: "Projects",
-            content: [ "Coming Soon" ],
+            content: [ "Might end up being lorem ipsum" ],
             rotationDirection: "right",
             renderFunction: 
                 <Projects/>
