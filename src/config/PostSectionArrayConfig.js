@@ -10,7 +10,10 @@ export default function PostSectionArrayConfig() {
     [
         {
             title: "About Me",
-            content: [ "I am a Software Developer in Denver, CO. I was introduced to coding through a python course and fell in love with it. This led to me jumping into a coding school in order to further expand my skills. I thoroughly enjoy figuring out how to take someones design dreams and turning them into a reality.", "I would love to be able to use technology in order to connect people to the outdoors. I have a passion for the outdoors and enjoy spending most of my free time being outside! Followed closely by a love for travel. I have spent most of my professional career traveling primarily in the United States and Canada. However, I also spent a fair amount of time working and living in China, Thailand, and New Zealand!"],
+            content: [ "My name is Kyle Trahan. I recently graduated from a coding bootcamp but for the last 6 years I have been traveling around the world building and maintaining Ziplines and Ropes courses. I really enjoyed the problem solving aspects of this career.",
+                "During my years as a builder I discovered a love for travel. I began to dabble in a few adventure activities. I worked as a Divemaster in Thailand and a Whitewater rafting guide in West Virginia.", 
+                "Before all of that I attended George Mason University where I got a degree in Criminology."
+            ],
             rotationDirection: "left",
             renderFunction: <AboutMe/>
         }, 
