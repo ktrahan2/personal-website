@@ -19,6 +19,11 @@ export default function ContactInformation() {
                 />
             </div>
             <MyForm/>
+            <div id="contact-links">
+                {/* links stand out maybe restyle? */}
+                <a href="https://www.linkedin.com/in/kyletrahan/">Linkedin</a>
+                <a href="https://github.com/ktrahan2">Github</a>
+            </div>
         </div>
     )
 }

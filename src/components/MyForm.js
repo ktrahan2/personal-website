@@ -20,15 +20,15 @@ export default class MyForm extends React.Component {
         id="message-form"
       >
         <div id="senders-email">
-            <label>Your Email:</label>
+            <label id="email-label">Your Email:</label>
             <input id="email-input" type="email" name="email" />
         </div>
         <div id="message">
-            <label>Message:</label>
+            <label id="message-label">Message:</label>
             <textarea id="message-input" type="text" name="message" cols="40" rows="10"></textarea>
         </div>
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        {status === "SUCCESS" ? <p>Thanks! I will get back to you shortly.</p> : <button class="button">Send Message</button>}
+        {status === "ERROR" && <p>Make sure you fill out both inputs!</p>}
       </form>
     );
   }

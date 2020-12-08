@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import ActiveQuadrant from './ActivePostSection'
 import postSectionArray from '../config/PostSectionArrayConfig'
 
+
+// <a href='https://pngtree.com/so/vine-clipart'>vine clipart png from pngtree.com</a> (source for photo background)
 export default function PostSection() {
 
     const [ isActiveQuadrant, setActiveQuadrant ] = useState("")

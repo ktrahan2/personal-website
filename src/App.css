@@ -4,10 +4,10 @@
 }
 
 #root {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   background-image: 
-  url('https://freepikpsd.com/wp-content/uploads/2019/11/transparent-png-leaf-border-4-Images.png'),
+  /* url('https://i.imgur.com/vRGdZ7m.png'), */
   url('photos/woodplanks.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -185,11 +185,14 @@ main {
 }
 
 #senders-email {
-  margin: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #email-input {
-  
+  background-color: #81631882;
   border: 0;
   border-radius: 5px;
   height: 40px;
@@ -210,5 +213,28 @@ main {
   border: 0;
   margin: 5px;
   border-radius: 5px;
+  background-color: #81631882;
+  resize: none;
+}
 
+.button {
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #e3c068ad;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1)
+}
+
+#contact-links {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  font-size: 26px;
+}
+
+#contact-links > a {
+  padding: 10px;
 }
