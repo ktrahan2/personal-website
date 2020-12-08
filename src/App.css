@@ -4,15 +4,12 @@
 }
 
 #root {
-  /* height: 100vh; */
   width: 100vw;
-  background-image: 
-  /* url('https://i.imgur.com/vRGdZ7m.png'), */
-  url('photos/woodplanks.jpg');
+  background-image: url("photos/woodplanks.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100%; 
+  min-height: 100%;
 }
 
 body {
@@ -27,17 +24,23 @@ header {
   height: 20%;
 }
 
+main {
+  display: flex;
+  height: 75%;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 #name-container {
   display: flex;
   width: 30%;
   align-items: flex-end;
 }
-
-#name-header {
+#name-container h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./photos/parchment.jpg');
+  background-image: url("./photos/parchment.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -46,17 +49,10 @@ header {
   border-radius: 10px;
   margin: 15px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.433);
-  font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
   font-size: 42px;
 }
 
-main {
-  display: flex;
-  height: 75%;
-  flex-flow: row wrap;
-  justify-content: center;
-}
- 
 .post-section {
   display: flex;
   height: 50%;
@@ -64,17 +60,8 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-.expanded-post-section {
-  height: 80%;
-  width: 90%;
-  z-index: 2;  
-  position: absolute;
-  padding: 15px;
-}
-
-.post-container {
-  background-image: url('./photos/parchment.jpg');
+.post-section .post-container {
+  background-image: url("./photos/parchment.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -87,14 +74,20 @@ main {
   overflow: hidden;
   transition: width 2s, height 2s;
 }
-
-.post-container:hover {
+.post-section .post-container:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.expanded-post-container { 
-  background-image: url('./photos/parchment.jpg');
+.expanded-post-section {
+  height: 80%;
+  width: 90%;
+  z-index: 2;
+  position: absolute;
+  padding: 15px;
+}
+.expanded-post-section .expanded-post-container {
+  background-image: url("./photos/parchment.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -111,13 +104,13 @@ main {
 .post-title {
   text-decoration: underline;
   margin: 10px;
-  font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
   font-size: 36px;
   height: 20%;
 }
 
 .scribble-post-information {
-  font-family: 'Herr Von Muellerhoff', cursive;
+  font-family: "Herr Von Muellerhoff", cursive;
   font-size: 6px;
 }
 
@@ -125,15 +118,15 @@ main {
   font-size: 28px;
   margin: 20px;
   padding: 20px;
-  font-family: 'MedievalSharp';
+  font-family: "MedievalSharp";
 }
 
 .rotate-left {
-  transform: rotate(-10deg)
+  transform: rotate(-10deg);
 }
- 
+
 .rotate-right {
-  transform: rotate(10deg)
+  transform: rotate(10deg);
 }
 
 .carousel-container {
@@ -148,7 +141,6 @@ main {
   align-self: center;
   margin: 5px;
 }
-
 .arrow:hover {
   cursor: pointer;
 }
@@ -161,8 +153,7 @@ main {
   margin: 10px;
   padding: 30px;
 }
-
-.links {
+.project-container a {
   display: flex;
   flex-flow: column wrap;
   font-size: 22px;
@@ -178,8 +169,8 @@ main {
   font-size: 28px;
   position: absolute;
   right: 30px;
+  width: 50px;
 }
-
 #exit-icon:hover {
   cursor: pointer;
 }
@@ -190,8 +181,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-#email-input {
+#senders-email input {
   background-color: #81631882;
   border: 0;
   border-radius: 5px;
@@ -206,8 +196,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-#message-input {
+#message textarea {
   height: 90%;
   width: 50%;
   border: 0;
@@ -222,10 +211,9 @@ main {
   border-radius: 10px;
   background-color: #e3c068ad;
 }
-
 .button:hover {
   cursor: pointer;
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 #contact-links {
@@ -234,7 +222,8 @@ main {
   margin: 50px;
   font-size: 26px;
 }
-
-#contact-links > a {
+#contact-links a {
   padding: 10px;
 }
+
+/*# sourceMappingURL=App.css.map */
