@@ -9,7 +9,7 @@ export default function ActiveQuadrant({ isActiveQuadrant, setActiveQuadrant }) 
             id={isActiveQuadrant.title}
         >
             <div 
-                className="post-container expanded-post-container"
+                className="expanded-post-container"
                 id={ isActiveQuadrant.title }
                 onClick={ (event) => event.target.id === "exit-icon" ? setActiveQuadrant("") : null }
             >

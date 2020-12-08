@@ -88,9 +88,24 @@ main {
   transition: width 2s, height 2s;
 }
 
-.expanded-post-container {
-   height: 100%;
-   width: 100%;
+.post-container:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.expanded-post-container { 
+  background-image: url('./photos/parchment.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+  transition: width 2s, height 2s;
+  height: 100%;
+  width: 100%;
 }
 
 .post-title {

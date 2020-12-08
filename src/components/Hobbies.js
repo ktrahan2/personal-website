@@ -7,12 +7,15 @@ import {
 
 export default function Hobbies() {
     return (
-        <div className="post-header">
+        <>
+            <div className="post-header">
                 <h2 className="post-title" >{ postSectionArray()[2].title }</h2>
                 <FontAwesomeIcon 
                     id="exit-icon" 
                     icon={ faTimesCircle }
                 />
             </div>
+            <p>Coming Soon</p>
+        </>
     )
 }
