@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
     faTimesCircle
   } from '@fortawesome/free-solid-svg-icons'
-  
+import MyForm from "./MyForm"
 export default function ContactInformation() {
     return (
         <div 
@@ -18,9 +18,7 @@ export default function ContactInformation() {
                     icon={ faTimesCircle }
                 />
             </div>
-            {postSectionArray()[3].content.map(( paragraph, index ) => {
-                return <p className="post-information" key={ index }>{ paragraph }</p>
-            })}
+            <MyForm/>
         </div>
     )
 }

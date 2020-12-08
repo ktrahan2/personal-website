@@ -20,7 +20,7 @@ export default function PostSectionArrayConfig() {
         {
             //create scroller for different projects worked on
             title: "Projects",
-            content: [ "Might end up being lorem ipsum" ],
+            content: [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac maximus odio. Praesent vel interdum magna, vitae posuere lacus. Proin scelerisque ultricies augue at posuere. Quisque sollicitudin lorem eget vestibulum convallis. Maecenas fermentum sapien quis blandit commodo. Suspendisse vel ex odio. Vestibulum quis facilisis ligula, ut pellentesque nisi. Phasellus vestibulum quam ut auctor feugiat. Vestibulum hendrerit tempus diam id dignissim. Etiam enim turpis, scelerisque at leo quis, tempus volutpat purus. Mauris tempus quis orci eget elementum. Ut consequat elit quis porttitor fringilla. Proin ultricies sodales turpis ac hendrerit. Sed lacinia, augue sed dapibus commodo, sem lorem volutpat lectus, quis pellentesque enim tortor sed mauris." ],
             rotationDirection: "right",
             renderFunction: 
                 <Projects/>
@@ -28,13 +28,13 @@ export default function PostSectionArrayConfig() {
         {
             //create scroller for photos from travel etc 
             title: "Hobbies",
-            content: [ "Coming Soon" ],
+            content: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac maximus odio. Praesent vel interdum magna, vitae posuere lacus. Proin scelerisque ultricies augue at posuere. Quisque sollicitudin lorem eget vestibulum convallis. Maecenas fermentum sapien quis blandit commodo. Suspendisse vel ex odio. Vestibulum quis facilisis ligula, ut pellentesque nisi. Phasellus vestibulum quam ut auctor feugiat. Vestibulum hendrerit tempus diam id dignissim. Etiam enim turpis, scelerisque at leo quis, tempus volutpat purus. Mauris tempus quis orci eget elementum. Ut consequat elit quis porttitor fringilla. Proin ultricies sodales turpis ac hendrerit. Sed lacinia, augue sed dapibus commodo, sem lorem volutpat lectus, quis pellentesque enim tortor sed mauris." ],
             rotationDirection: "left",
             renderFunction: <Hobbies />
         }, 
         {
             title: "Contact",
-            content: [ "Email - ktrahan2@gmail.com", "Github  - https://github.com/ktrahan2", "Linkedin - https://www.linkedin.com/in/kyletrahan/"],
+            content: [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac maximus odio. Praesent vel interdum magna, vitae posuere lacus. Proin scelerisque ultricies augue at posuere. Quisque sollicitudin lorem eget vestibulum convallis. Maecenas fermentum sapien quis blandit commodo. Suspendisse vel ex odio. Vestibulum quis facilisis ligula, ut pellentesque nisi. Phasellus vestibulum quam ut auctor feugiat. Vestibulum hendrerit tempus diam id dignissim. Etiam enim turpis, scelerisque at leo quis, tempus volutpat purus. Mauris tempus quis orci eget elementum. Ut consequat elit quis porttitor fringilla. Proin ultricies sodales turpis ac hendrerit. Sed lacinia, augue sed dapibus commodo, sem lorem volutpat lectus, quis pellentesque enim tortor sed mauris."],
             rotationDirection: "right",
             renderFunction: <ContactInformation />
         }, 
