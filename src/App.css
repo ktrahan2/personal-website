@@ -148,6 +148,10 @@ main {
   margin: 5px;
 }
 
+.arrow:hover {
+  cursor: pointer;
+}
+
 .project-container {
   display: flex;
   flex-flow: column wrap;
@@ -173,4 +177,8 @@ main {
   font-size: 28px;
   position: absolute;
   right: 30px;
+}
+
+#exit-icon:hover {
+  cursor: pointer;
 }
