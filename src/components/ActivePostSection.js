@@ -1,8 +1,8 @@
 import React from 'react'
 
 export default function ActiveQuadrant({ isActiveQuadrant, setActiveQuadrant }) {
-    console.log(isActiveQuadrant.renderFunction)
     
+    //add ability to scroll to overflow
     return (
         <div 
             className="expanded-post-section"
