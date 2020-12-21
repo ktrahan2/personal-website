@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import postSectionArray from "../config/PostSectionArrayConfig"
+import CurrentPicture from './CurrentPicture'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
     faTimesCircle
   } from '@fortawesome/free-solid-svg-icons'
 
 export default function Hobbies() {
+
+    const [ isCurrentPicture, setCurrentPicture ] = useState(0)
+
     return (
         <>
             <div className="post-header">
@@ -15,7 +19,8 @@ export default function Hobbies() {
                     icon={ faTimesCircle }
                 />
             </div>
-            <p>Coming Soon</p>
+            <CurrentPicture isCurrentPicture={isCurrentPicture}/>
         </>
+        
     )
 }

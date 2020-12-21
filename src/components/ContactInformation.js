@@ -5,6 +5,7 @@ import {
     faTimesCircle
   } from '@fortawesome/free-solid-svg-icons'
 import MyForm from "./MyForm"
+
 export default function ContactInformation() {
     return (
         <div 
