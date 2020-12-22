@@ -85,7 +85,6 @@ main {
   text-align: center;
   z-index: 1;
   overflow: hidden;
-  transition: width 2s, height 2s;
 }
 
 .post-container:hover {
@@ -103,7 +102,6 @@ main {
   text-align: center;
   z-index: 1;
   overflow: hidden;
-  transition: width 2s, height 2s;
   height: 100%;
   width: 100%;
 }
@@ -237,4 +235,9 @@ main {
 
 #contact-links > a {
   padding: 10px;
+}
+
+#current-picture {
+  width: 70%;
+  height: 60vh;
 }

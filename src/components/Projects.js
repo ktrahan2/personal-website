@@ -12,7 +12,6 @@ export default function Projects() {
 
     const [ isActiveProject, setActiveProject ] = useState(0)
 
-    //update arrows to larger size
     return (
         <>
             <div className="post-header">
@@ -24,13 +23,13 @@ export default function Projects() {
             </div>
             <div className="carousel-container"> 
                 <LeftArrow 
-                    setActiveProject={setActiveProject}
-                    isActiveProject={isActiveProject}
+                    setActiveProject={ setActiveProject }
+                    isActiveProject={ isActiveProject }
                 />
-                <CurrentProject isActiveProject={isActiveProject}/>
+                <CurrentProject isActiveProject={ isActiveProject }/>
                 <RightArrow
-                    setActiveProject={setActiveProject}
-                    isActiveProject={isActiveProject}
+                    setActiveProject={ setActiveProject }
+                    isActiveProject={ isActiveProject }
                 />
             </div>
         </>
