@@ -5,7 +5,7 @@ import Crab from '../assets/photos/Crab.jpg'
 import Dolphins from '../assets/photos/Dolphins.jpg'
 import Elephant from '../assets/photos/Elephant.jpg'
 import FarmMountain from '../assets/photos/FarmMountain.jpg'
-import GreatWall from '../assets/photos/GreatWall.jpg'
+import GreatWall from '../assets/photos/GreatWAll.jpg'
 import GreenyBits from '../assets/photos/GreenyBits.jpg'
 import Grizzly from '../assets/photos/Grizzly.jpg'
 import IslandInSand from '../assets/photos/IslandInSand.jpg'
@@ -17,7 +17,6 @@ import MtDoomPaddock from '../assets/photos/MtDoomPaddock.jpg'
 import NotherSunset from '../assets/photos/NotherSunset.jpg'
 import Nudi from '../assets/photos/Nudi.jpg'
 import PancakeRocks from '../assets/photos/PancakeRocks.jpg'
-import PiCanyon from '../assets/photos/PiCanyon.jpg'
 import WashBuffalo from '../assets/photos/WashBuffalo.jpg'
 import WaterFallCR from '../assets/photos/WaterFallCR.jpg'
 import WhaleShark from '../assets/photos/WhaleShark.jpg'
@@ -117,11 +116,6 @@ export const pictures = [
         url: PancakeRocks,
         altTag: 'Pancake Rocks',
         description: 'Punakaiki, Pancake Rocks!',
-    },
-    {
-        url: PiCanyon,
-        altTag: 'Pi Canyon Overlook',
-        description: 'Pai Canyon, Thailand',
     },
     {
         url: WashBuffalo,

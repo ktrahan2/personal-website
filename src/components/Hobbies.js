@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import postSectionArray from "../config/PostSectionArrayConfig"
 import CurrentPicture from './CurrentPicture'
+import LeftArrow from "./LeftArrow"
+import RightArrow from './RightArrow'
+import { pictures } from "../config/PictureConfig"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
     faTimesCircle
@@ -9,7 +12,8 @@ import {
 export default function Hobbies() {
 
     const [ isCurrentPicture, setCurrentPicture ] = useState(0)
-
+    const pageLength = pictures.length
+    
     return (
         <>
             <div className="post-header">
@@ -19,7 +23,18 @@ export default function Hobbies() {
                     icon={ faTimesCircle }
                 />
             </div>
-            <CurrentPicture isCurrentPicture={isCurrentPicture}/>
+            <div className="carousel-container">
+                <LeftArrow 
+                    setActivePage={ setCurrentPicture }
+                    isActivePage={ isCurrentPicture }
+                />
+                <CurrentPicture isCurrentPicture={isCurrentPicture}/>
+                <RightArrow
+                    setActivePage={ setCurrentPicture }
+                    isActivePage={ isCurrentPicture }
+                    pageLength={pageLength}
+                />
+            </div>
         </>
         
     )

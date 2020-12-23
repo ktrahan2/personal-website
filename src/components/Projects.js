@@ -4,6 +4,7 @@ import CurrentProject from './CurrentProject'
 import LeftArrow from "./LeftArrow"
 import RightArrow from './RightArrow'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { projects } from '../config/ProjectConfig'
 import { 
     faTimesCircle
   } from '@fortawesome/free-solid-svg-icons'
@@ -11,6 +12,7 @@ import {
 export default function Projects() {
 
     const [ isActiveProject, setActiveProject ] = useState(0)
+    const pageLength = projects.length
 
     return (
         <>
@@ -23,13 +25,14 @@ export default function Projects() {
             </div>
             <div className="carousel-container"> 
                 <LeftArrow 
-                    setActiveProject={ setActiveProject }
-                    isActiveProject={ isActiveProject }
+                    setActivePage={ setActiveProject }
+                    isActivePage={ isActiveProject }
                 />
                 <CurrentProject isActiveProject={ isActiveProject }/>
                 <RightArrow
-                    setActiveProject={ setActiveProject }
-                    isActiveProject={ isActiveProject }
+                    setActivePage={ setActiveProject }
+                    isActivePage={ isActiveProject }
+                    pageLength={pageLength}
                 />
             </div>
         </>
