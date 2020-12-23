@@ -5,7 +5,7 @@ export default function CurrentPicture({ isCurrentPicture }) {
     return (
         <div id='picture-container'>
             <img id="current-picture" src={pictures[isCurrentPicture].url} alt={pictures[isCurrentPicture].altTag}/>
-            <p>{pictures[isCurrentPicture].description}</p>
+            <p id="picture-description">{pictures[isCurrentPicture].description}</p>
         </div>
     )
 }

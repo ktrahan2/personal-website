@@ -30,7 +30,7 @@ export const pictures = [
     {
         url: ChinaTree,
         altTag: 'Tree',
-        description: 'One of my favorite trees!',
+        description: 'One of my favorite sets of trees!',
     },
     {
         url: ColoredWater,
