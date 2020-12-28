@@ -50,7 +50,7 @@ export const pictures = [
     {
         url: Elephant,
         altTag: 'Elephant',
-        description: 'She got a wiff of some fruit in my bag!',
+        description: 'She got a whiff of some fruit in my bag!',
     },
     {
         url: FarmMountain,
