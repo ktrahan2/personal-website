@@ -11,7 +11,7 @@ export default function PostSectionArrayConfig() {
         {
             title: "Projects",
             content: [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac maximus odio. Praesent vel interdum magna, vitae posuere lacus. Proin scelerisque ultricies augue at posuere. Quisque sollicitudin lorem eget vestibulum convallis. Maecenas fermentum sapien quis blandit commodo. Suspendisse vel ex odio. Vestibulum quis facilisis ligula, ut pellentesque nisi. Phasellus vestibulum quam ut auctor feugiat. Vestibulum hendrerit tempus diam id dignissim. Etiam enim turpis, scelerisque at leo quis, tempus volutpat purus. Mauris tempus quis orci eget elementum. Ut consequat elit quis porttitor fringilla. Proin ultricies sodales turpis ac hendrerit. Sed lacinia, augue sed dapibus commodo, sem lorem volutpat lectus, quis pellentesque enim tortor sed mauris." ],
-            rotationDirection: "right",
+            rotationDirection: "left",
             renderFunction: <Projects/>
         }, 
         {
@@ -21,7 +21,7 @@ export default function PostSectionArrayConfig() {
                 "During my years as a builder I discovered a love for travel. I began to dabble in a few adventure activities. I worked as a Divemaster in Thailand and a Whitewater rafting guide in West Virginia.", 
                 "Before all of that I attended George Mason University where I got a degree in Criminology."
             ],
-            rotationDirection: "left",
+            rotationDirection: "right",
             renderFunction: <AboutMe/>
         }, 
         {

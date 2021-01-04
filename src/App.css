@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'MedievalSharp';
 }
 
 #root {
@@ -106,7 +107,7 @@ main {
 .post-title {
   text-decoration: underline;
   margin: 10px;
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'MedievalSharp';
   font-size: 36px;
   height: 20%;
 }
@@ -121,6 +122,10 @@ main {
   margin: 20px;
   padding: 20px;
   font-family: 'MedievalSharp';
+}
+
+.project-title {
+  font-size: 30px;
 }
 
 .rotate-left {
@@ -153,7 +158,6 @@ main {
   flex-flow: column;
   justify-content: space-evenly;
   width: 80%;
-  margin: 10px;
 }
 
 .links {
@@ -255,17 +259,20 @@ main {
   .post-section {
     width: 100%
   }
-  .carousel-container {
-    overflow: scroll;
-  }
   main {
     overflow: scroll;
   }
   #exit-icon {
-    right: 50px
+    right: 40px
+  }
+  .project-container {
+    overflow: scroll;
   }
   .expanded-post-container {
     overflow: scroll;
+  }
+  .post-information {
+    font-size: 22px;
   }
 }
 
@@ -279,6 +286,9 @@ main {
   }
   #exit-icon {
     right: 65px
+  }
+  .project-container {
+    overflow: scroll;
   }
 }
 
