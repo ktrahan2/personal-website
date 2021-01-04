@@ -17,7 +17,7 @@ export default function Projects() {
     return (
         <>
             <div className="post-header">
-                <h2 className="post-title" >{ postSectionArray()[1].title }</h2>
+                <h2 className="post-title" >{ postSectionArray()[0].title }</h2>
                 <FontAwesomeIcon 
                     id="exit-icon" 
                     icon={ faTimesCircle }

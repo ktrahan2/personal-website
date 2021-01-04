@@ -9,13 +9,13 @@ export default function AboutMe() {
     return (
         <>
             <div className="post-header">
-                <h2 className="post-title" >{ postSectionArray()[0].title }</h2>
+                <h2 className="post-title" >{ postSectionArray()[1].title }</h2>
                 <FontAwesomeIcon 
                     id="exit-icon" 
                     icon={ faTimesCircle }
                 />
             </div>
-            { postSectionArray()[0].content.map((paragraph, index) => {
+            { postSectionArray()[1].content.map((paragraph, index) => {
                 return <p className="post-information" key={index}>{paragraph}</p>
             })}
         </>
