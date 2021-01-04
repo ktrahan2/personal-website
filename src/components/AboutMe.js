@@ -18,6 +18,7 @@ export default function AboutMe() {
             { postSectionArray()[1].content.map((paragraph, index) => {
                 return <p className="post-information" key={index}>{paragraph}</p>
             })}
+            <a id="resume-link" href="https://drive.google.com/file/d/18jfIihvyzrl2QqNi2eM7yVwGxIOb6EaO/view?usp=sharing">Resume</a>
         </>
     )
 }

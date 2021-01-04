@@ -43,7 +43,7 @@ header {
   border-radius: 10px;
   margin: 15px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.433);
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'MedievalSharp';
   font-size: 42px;
   padding: 5px;
 }
@@ -150,7 +150,7 @@ main {
 
 .project-container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: space-evenly;
   width: 80%;
   margin: 10px;
@@ -244,6 +244,11 @@ main {
 
 #picture-description {
   font-size: 28px;
+}
+
+#resume-link {
+  font-size: 26px;
+  padding: 50px;
 }
 
 @media ( max-width: 500px ) {
