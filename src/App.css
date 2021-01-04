@@ -9,7 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100%; 
+  height: 100%; 
 }
 
 body {
@@ -26,8 +26,8 @@ header {
 
 #name-container {
   display: flex;
-  width: 30%;
-  align-items: flex-end;
+  width: fit-content;
+  align-items: center;
 }
 
 #name-header {
@@ -45,6 +45,7 @@ header {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.433);
   font-family: 'MedievalSharp', cursive;
   font-size: 42px;
+  padding: 5px;
 }
 
 main {
@@ -63,10 +64,8 @@ main {
 }
 
 .expanded-post-section {
-  height: 80%;
+  height: 100%;
   width: 90%;
-  z-index: 2;  
-  position: absolute;
   padding: 15px;
 }
 
@@ -101,6 +100,7 @@ main {
   overflow: hidden;
   height: 100%;
   width: 100%;
+ 
 }
 
 .post-title {
@@ -133,6 +133,7 @@ main {
 
 .carousel-container {
   display: flex;
+  /* flex-direction: column wrap; */
   width: 100%;
   height: 80%;
 }
@@ -154,7 +155,7 @@ main {
   justify-content: space-evenly;
   width: 80%;
   margin: 10px;
-  padding: 30px;
+  /* padding: 20px; */
 }
 
 .links {
@@ -234,11 +235,39 @@ main {
   padding: 10px;
 }
 
+#picture-container {
+  width: 100%;
+}
+
 #current-picture {
-  width: 70%;
+  width: 85%;
   height: 55vh;
 }
 
 #picture-description {
   font-size: 28px;
 }
+
+@media ( max-width: 500px ) {
+  .post-section {
+    width: 100%
+  }
+  .carousel-container {
+    overflow: scroll;
+  }
+  main {
+    overflow: scroll;
+  }
+}
+
+@media ( max-width: 960px ) {
+  .expanded-post-container {
+    overflow: scroll;
+  }
+  #current-picture {
+    width: 100%;
+    height: 85%;
+  }
+}
+
+

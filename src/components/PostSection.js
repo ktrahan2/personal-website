@@ -34,12 +34,11 @@ export default function PostSection() {
 
     return (
         <>
-            { createQuadrants() }
             { isActiveQuadrant ? 
                 <ActiveQuadrant 
                     isActiveQuadrant={isActiveQuadrant}
                     setActiveQuadrant={setActiveQuadrant}
-                /> : null } 
+                /> : createQuadrants() } 
         </>
     )
 }
