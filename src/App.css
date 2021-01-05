@@ -119,8 +119,6 @@ main {
 
 .post-information {
   font-size: 28px;
-  margin: 20px;
-  padding: 20px;
   font-family: 'MedievalSharp';
 }
 
@@ -158,6 +156,7 @@ main {
   flex-flow: column;
   justify-content: space-evenly;
   width: 80%;
+  height: 100%;
 }
 
 .links {
@@ -169,6 +168,7 @@ main {
 .post-header {
   display: flex;
   justify-content: center;
+  height: 10%;
 }
 
 #exit-icon {
