@@ -122,6 +122,13 @@ main {
   font-family: 'MedievalSharp';
 }
 
+.aboutme-information {
+  font-size: 28px;
+  font-family: 'MedievalSharp';
+  padding: 20px;
+  margin: 20px;
+}
+
 .project-title {
   font-size: 30px;
 }
